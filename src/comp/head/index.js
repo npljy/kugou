@@ -8,8 +8,7 @@ class Header extends Component{
         this.state = {}
     }
     render(){
-        console.log("head",this.props);
-
+        // console.log("head",this.props);
         return (
             <div>
                 <NavBar
@@ -19,7 +18,7 @@ class Header extends Component{
                         <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
                     ]}
                 ></NavBar>
-                <Nav url = {}/>
+                <Nav url={this.props.url}/>
             </div>
         )
     }

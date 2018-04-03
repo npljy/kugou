@@ -1,16 +1,14 @@
-import React,{component} from 'react';
+import React,{Component} from 'react';
 import { List } from 'antd-mobile';
 
 const Item = List.Item;
-const Brief = Item.Brief;
-
-class NewList extends React.Component {
+class NewList extends Component {
     pushState = ()=>{
         
     }
     render() {
         let {songlist} = this.props;
-        console.log("newList",songlist);
+        // console.log("newList",songlist);
         return (
             <List className="my-list">
                 <Item 

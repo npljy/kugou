@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import logo from './logo.svg';
 import './App.css';
 import NewSong from './comp/newSong';
 
@@ -26,7 +25,7 @@ class App extends Component {
 	}
 	render() {
 		let {banner,data} = this.state;
-		console.log("App.js",this.props)
+		// console.log("App.js",this.props)
 		return (
 			<div className="App">
 				<NewSong {...{

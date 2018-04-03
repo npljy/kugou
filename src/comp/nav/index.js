@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import {Tabs,WhiteSpace} from 'antd-mobile';
+import './index.css'
+
 class Nav extends Component{
     constructor(){
         super();
@@ -19,14 +21,23 @@ class Nav extends Component{
             { title: '歌单' },
             { title: '歌手' }
         ];
-        
+        let {url:{location}} = this.props;
+        let obj = {
+            '/newsong':0,
+            '/rank':1,
+            '/hot':2,
+            '/singer':3
+        }
+        let num = obj[location.pathname];
         return (
             <div>
+               <WhiteSpace/>
                 <Tabs tabs = {tabs}
                     initialPage={0}
                     renderTabBar={props => 
                         <Tabs.DefaultTabBar {...props} 
                         page={4} 
+                        activeTab={num}
                         onTabClick={(tab,index)=>{this.clickTab(tab,index)}} />
                     }
                 ></Tabs>

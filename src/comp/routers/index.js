@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
 import { BrowserRouter as Router , Route } from 'react-router-dom';
 import App from '../../App';
-import Header from '../head'
+import Header from '../head';
+import Rank from '../rank'
 
 const routers = [
     {
@@ -14,16 +15,16 @@ const routers = [
     },
     {
         path:'/rank',
-        component:App
-    },,
+        component:Rank
+    },
     {
         path:'/hot',
         component:App
-    },,
+    },
     {
         path:'/singer',
         component:App
-    },,
+    },
     {
         path:'/play/:id',
         component:App
