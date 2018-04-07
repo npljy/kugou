@@ -2,7 +2,9 @@ import React,{Component} from 'react';
 import { BrowserRouter as Router , Route } from 'react-router-dom';
 import App from '../../App';
 import Header from '../head';
-import Rank from '../rank'
+import Rank from '../rank';
+import Menu from '../menu';
+import Singer from '../singer';
 
 const routers = [
     {
@@ -18,12 +20,12 @@ const routers = [
         component:Rank
     },
     {
-        path:'/hot',
-        component:App
+        path:'/menu',
+        component:Menu
     },
     {
         path:'/singer',
-        component:App
+        component:Singer
     },
     {
         path:'/play/:id',

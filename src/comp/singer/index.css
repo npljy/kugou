@@ -1,0 +1,9 @@
+.singer-list{
+    list-style: none;
+    width: 90%;
+    margin: 0 auto;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    border-radius: 10px;
+    overflow: hidden;
+}

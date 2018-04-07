@@ -8,22 +8,22 @@ class Rank extends Component{
     constructor(){
         super();
         this.state={
-            data:[]
+            rankList:[]
         };
     }
-    componentDidMount(){
+    componentWillMount(){
 		axios.get('/proxy/rank/list&json=true').then((json)=>{
 			// console.log("App.js",json);
 			let {data:{rank:{list}}} = json;
 			this.setState({
-				data:list
+				rankList:list
 			})
 		})
 	}
     render(){
-        let {data} = this.state;
-        console.log("rank",data);
-        let list = data.map((e,i)=>{
+        let {rankList} = this.state;
+        // console.log("rank",rankList);
+        let list = rankList.map((e,i)=>{
             return(
                 <List key={i}>
                     <Item

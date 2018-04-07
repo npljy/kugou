@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Banner from '../banner';
-import NewList from '../newList'
+import { List } from 'antd-mobile';
+const Item = List.Item;
 
 class NewSong extends Component{
     constructor(){
@@ -11,11 +12,13 @@ class NewSong extends Component{
         let {banner,data} = this.props;
         let list = data.map((e,i)=>{
             return(
-                <NewList {...{
-                    key:i,
-                    songlist:e,
-    
-                }}/>
+                <List className="my-list" key={i}>
+                    <Item 
+                        arrow="horizontal" 
+                        multipleLine
+                        onClick={() => {}}
+                    >{e.filename}</Item>
+                </List>
             )
         })
         // console.log("newSong",list);

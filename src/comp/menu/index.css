@@ -1,0 +1,16 @@
+.menu-ico{
+    position: absolute;
+    color: #9b9b9b;
+}
+.menu-ico img{
+    height: 18px;
+    width: 16px;
+}
+.menu-ico span{
+    display: inline-block;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: bottom;
+    margin-left: 6px;
+}

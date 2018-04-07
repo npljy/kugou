@@ -9,7 +9,7 @@ class Nav extends Component{
     }
     
     clickTab = (tab,index)=>{
-        const navArr = ["newsong","rank","hot","singer"];
+        const navArr = ["newsong","rank","menu","singer"];
         let {url:{history}} = this.props;
         history.push({pathname:`/${navArr[index]}`});
     }
@@ -25,7 +25,7 @@ class Nav extends Component{
         let obj = {
             '/newsong':0,
             '/rank':1,
-            '/hot':2,
+            '/menu':2,
             '/singer':3
         }
         let num = obj[location.pathname];

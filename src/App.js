@@ -13,7 +13,7 @@ class App extends Component {
 		};
 	}
 
-	componentDidMount(){
+	componentWillMount(){
 		axios.get('/proxy/?json=true').then((json)=>{
 			// console.log("App.js",json);
 			let {data:{banner,data}} = json;
