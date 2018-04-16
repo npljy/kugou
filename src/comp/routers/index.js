@@ -5,6 +5,7 @@ import Header from '../head';
 import Rank from '../rank';
 import Menu from '../menu';
 import Singer from '../singer';
+import Player from '../player';
 
 const routers = [
     {
@@ -29,7 +30,7 @@ const routers = [
     },
     {
         path:'/play/:id',
-        component:App
+        component:Player
     }
 ]
 
